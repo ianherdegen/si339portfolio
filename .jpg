@@ -127,7 +127,7 @@ img.responsive { height: auto; }
   limiting water usage.
 </main>
 
-<img class="responsive" alt="compost image" src="imgs/compost.jpg">
+<img class="responsive" alt="compost image" src="compost.jpg">
 
 <script>
 function myFunction() {
