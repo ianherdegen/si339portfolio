@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ian's Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #007BFF;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #007BFF;
+   color: white;
+   text-align: center;
+}
+@media screen and ( max-width: 1024px ) {
+img.responsive { width: 200px; }
+}
+@media screen and ( min-width:1025px ) and ( max-width: 1280px ) {
+img.responsive { width: 300px; }
+}
+@media screen and ( min-width: 1081px ) {
+img.responsive { width: 400px; }
+}
+img.responsive { height: auto; }
+</style>
+</head>
+<body>
+
+<a class="skip-to-content-link" href="#main">
+    Skip To Content
+</a>
+
+<div class="topnav" id="myTopnav">
+  <a href="futureCities.html">Future Cities</a>
+  <a href="composting.html"  class="active">Composting</a>
+  <a href="rewardsSystem.html">Rewards System</a>
+  <a href="undergroundDelivery.html">Underground Delivery</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<main>
+  <h1>Composting</h1>
+  In our future cities, composting will be the norm. Nowadays, composting is rather rare simply because people
+  are not entirely used to the idea, or because of other issues such as barriers against starting to compost
+  (the education on the subject, a motivation from peers to partake in composting, or lack of a compost machine).
+  However, this will become more commonplace, as recycling is, over time.
+
+  <br>
+  <br>
+
+  Motivations:
+  Our primary ways of getting people to begin composting are the following: 
+  <ul>
+    <li>
+      Currently, it is unlikely that people live in neighborhoods where composting is the norm.
+    </li>
+    <li>
+      We will encourage composting amongst prevelant members of various communities to encourage the behavior to spread throughout the communities.
+    </li>
+    <li>
+      We will make it easy as possible to compost, by providing equipment necessary to people that wish to partake.
+    </li>
+  </ul>
+  We also will have a reward system for composting. Those that choose to partake in the compost network, which will be the compost
+  equivalent of the recycling network, can receive rewards by random raffle. This is explained more in detail in the
+  rewards system page. Other systems can be developed to encourage use through our rewards system, such as recycling, as well as
+  limiting water usage.
+</main>
+
+<img class="responsive" alt="compost image" src="imgs/compost.jpg">
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+<div class="footer">
+  <p>Made by Ian</p>
+</div>
+
+</body>
+
+</html>
